@@ -1,0 +1,179 @@
+---
+label: HaProxy ACL
+description: Block host header with Haproxy
+
+icon_image: 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
+rank: 10
+
+
+form_types:
+  - name: ha_proxy_acl
+    label: IPs and Ports
+    description: |
+      HAProxy is use to block internal domain request with the host header
+      Your ELB external should point to these HAProxy instances
+    verifiers:
+      - name: Verifiers::StaticIpsVerifier
+    property_inputs:
+      - reference: .ha_proxy_acl.static_ips
+        label: HAProxy blocker IPs
+        description: "Enter the IP address(es) for your HAProxy blocker. You must point your DNS or ELB to this IP. HAProxy's IP must be in your subnet."
+      - reference: .ha_proxy_acl.disable_http
+        label: HAProxy allows HTTPS traffic only
+        description: "Allows HTTPS traffic only to HAProxy and turns on secure flag for cookies generated by Router."
+      - reference: .ha_proxy_acl.ssl_rsa_certificate
+        label: SSL Termination Certificate
+        description: "This certificate is used by HAProxy for SSL termination. If you use an external load-balancer instead, that load-balancer's certificate is still required here in case you have other Pivotal Cloud Foundry services installed that reference this certificate. You can also generate a self-signed certificate with your system wildcard domain if you do not have a certificate available."
+      - reference: .ha_proxy_acl.ssl_ciphers
+        label: HAProxy SSL Ciphers
+      - reference: .ha_proxy_acl.enable_4443
+        label: HAProxy Enable 4443
+        description: "Enables port 4443 for backwards compatibility with WSS-based apps using the old CF haproxy"
+      - reference: .ha_proxy_acl.internal_only_domains
+        label: Internal domain
+        description: "Internal domain list comma separated. Ex internal.example.com "
+
+job_types:
+
+  - name: haproxy_acl
+    resource_label: Haproxy host header blocker
+    job_templates:
+    - haproxy
+    release: cf-haproxy
+
+    resource_definitions:
+      - name: ram
+        type: integer
+        label: RAM
+        configurable: true
+        default: 2_048
+        constraints:
+          min: 1_024
+
+      - name: ephemeral_disk
+        type: integer
+        label: Ephemeral Disk
+        configurable: true
+        default: 4_096
+        constraints:
+          min: 1_024
+
+      - name: persistent_disk
+        type: integer
+        label: Persistent Disk
+        configurable: false
+        default: 0
+
+      - name: cpu
+        type: integer
+        label: CPU
+        configurable: true
+        default: 1
+        constraints:
+          min: 1
+
+    static_ip: 0
+    dynamic_ip: 1
+    max_in_flight: 100%
+
+    instance_definitions:
+      - name: instances
+        type: integer
+        label: Instances
+        configurable: true
+        default: 1
+
+    property_blueprints:
+
+      - name: ssl_rsa_certificate
+        type: rsa_cert_credentials
+        configurable: true
+        optional: true
+
+      - name: disable_http
+        type: boolean
+        configurable: true
+        default: false
+
+      - name: enable_4443
+        type: boolean
+        configurable: true
+        default: false
+
+
+      - name: internal_only_domains
+        type: string_list
+        configurable: true
+        optional: false   
+
+      - name: ssl_ciphers
+        type: text
+        configurable: true
+        optional: true
+        default: "ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-DSS-AES128-GCM-SHA256:kEDH+AESGCM:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA:ECDHE-ECDSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-DSS-AES128-SHA256:DHE-RSA-AES256-SHA256:DHE-DSS-AES256-SHA:DHE-RSA-AES256-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:ECDHE-RSA-RC4-SHA:ECDHE-ECDSA-RC4-SHA:AES128:AES256:RC4-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!3DES:!MD5:!PSK"
+
+      - name: vm_credentials
+        type: salted_credentials
+        default:
+          identity: vcap
+
+    manifest: |
+      ha_proxy:
+        backend_port: 80
+        backend_servers: (( ..cf.router.ips )) 
+        disable_http: (( disable_http.value ))
+        enable_4443: (( enable_4443.value ))
+        internal_only_domains:  (( internal_only_domains.value ))
+        keepalive_timeout: 1
+        queue_timeout: 30
+        request_timeout: 900
+        server_timeout: 900
+        ssl_ciphers: (( ssl_ciphers.value ))
+        ssl_pem: (( ssl_rsa_certificate.cert_and_private_key_pems || nil ))
+
+  - name: compilation
+    resource_label: Compilation
+
+    resource_definitions:
+      - name: ram
+        type: integer
+        label: RAM
+        configurable: true
+        default: 1_024
+        constraints:
+          min: 1_024
+
+      - name: ephemeral_disk
+        type: integer
+        label: Ephemeral Disk
+        configurable: true
+        default: 4_096
+        constraints:
+          min: 1_024
+
+      - name: persistent_disk
+        type: integer
+        label: Persistent Disk
+        configurable: false
+        default: 0
+
+      - name: cpu
+        type: integer
+        label: CPU
+        configurable: true
+        default: 2
+        constraints:
+          min: 1
+
+    static_ip: 0
+    dynamic_ip: 1
+    max_in_flight: 100%
+
+    instance_definitions:
+      - name: instances
+        type: integer
+        label: Instances
+        configurable: true
+        default: 2
+        constraints:
+          min: 1

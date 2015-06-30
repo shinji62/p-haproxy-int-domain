@@ -1,0 +1,21 @@
+---
+name: p-haproxy-int-domain
+product_version: 1.0.0.0$PRERELEASE_VERSION$
+metadata_version: '1.4'
+target_installer_version: 1.4.0.0
+stemcell_criteria:
+  os: ubuntu-trusty
+  version: '2865.1'
+  requires_cpi: false
+releases:
+- name: cf-haproxy
+  file: cf-haproxy-boshrelease-5.tgz
+  version: '5'
+  md5: 92b7c57ad403705e68a1ed879e7c2c5f
+  url: https://bosh.io/d/github.com/cloudfoundry-community/cf-haproxy-boshrelease?v=5
+requires_product_versions:
+- name: cf
+  version: "~> 1.4"
+provides_product_versions:
+- name: p-haproxy-int-domain
+  version: 1.0.0.0
