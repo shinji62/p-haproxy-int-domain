@@ -12,7 +12,7 @@ releases:
   file: cf-haproxy-boshrelease-5.tgz
   version: '5'
   md5: 92b7c57ad403705e68a1ed879e7c2c5f
-  url: https://bosh.io/d/github.com/cloudfoundry-community/cf-haproxy-boshrelease?v=5
+  url: http://bosh.io/d/github.com/cloudfoundry-community/cf-haproxy-boshrelease?v=5
 requires_product_versions:
 - name: cf
   version: "~> 1.4"
